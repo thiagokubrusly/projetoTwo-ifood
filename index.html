@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <title>ifood Humildão| Projeto 2 | Vem Ser Tech</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/catalogo.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="logo-header" src="assets/img/logo-ifood.png"
+                    alt="Logo da Empresa ifood Humildão, fundo vermelho com letras brancas formando a palavra ifood e uma seta curva apontando para a direita branca">
+            </a>
+            <div class="mobile-menu" aria-label="Abrir ou Fechar Menu" >
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list" role="Menu de navegação">
+                <li class="active-menu"><a href="index.html">Principal</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#fale-conosco">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container" id="quem-somos">
+        <h2 class="title">Quem Somos</h2>
+        <p class="text">Nós entregamos mais que pedidos. O iFood tem o propósito de alimentar o futuro.<br><br>
+            O iFood é uma empresa brasileira que aproxima clientes, restaurantes e entregadores de forma simples e prática. E para proporcionar uma experiência incrível a cada um deles, nossa entrega vai muito além do delivery.<br>
+        </p>
+    </section>
+
+    <section id="cardapio">
+        <ul class="catalog">
+            <li class="food">
+                <h2 class="food-name">Pizzas</h2>
+                <ul>
+                    <li class="card">
+                        <a href="#">
+                            <img class="card-image" src="./assets/img/pizza.jpg" alt="pizza redonda de queijo com rodelas de calabresa">
+                            <ul class="info">
+                                <li>Pizza 1</li>
+                                <li>Sabor: calabresa</li>
+                                <li>R$50,00</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="card">
+                        <a href="#">
+                            <img class="card-image" src="./assets/img/pizza2.jpg" alt="fatia de pizza com queijo e rodelas de pepperoni">
+                            <ul class="info">
+                                <li>Pizza 2</li>
+                                <li>Sabor: pepperoni</li>
+                                <li>R$60,00</li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="food">
+                <h2 class="food-name">Burguers</h2>
+                <ul>
+                    <li class="card">
+                        <a href="#">
+                            <img class="card-image" src="./assets/img/burguer.jpg" alt="burguer com carne e queijo">
+                            <ul class="info">
+                                <li>Burguer 1</li>
+                                <li>Blend: angus</li>
+                                <li>R$40,00</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="card">
+                        <a href="#">
+                            <img class="card-image" src="./assets/img/burguer2.jpg" alt="burguer com carne, alface, cebola, tomate e queijo">
+                            <ul class="info">
+                                <li>Burguer 2</li>
+                                <li>Blend: costela</li>
+                                <li>R$40,00</li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="container" id="fale-conosco">
+        <h2 class="title">Fale Conosco</h2>
+        <form>
+            <label for="nomesobrenome">Nome Completo</label>
+            <input type="text" id="name" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" placeholder="email@email.com">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="4" id="message" class="input-padrao"></textarea>
+
+            <fieldset>
+                <legend>Qual motivo do seu contato?</legend>
+
+                <label><input type="radio" name="motivo" value="elogios" id="radio-elogios" checked>Elogios</label>
+                
+                <label><input type="radio" name="motivo" value="duvidas" id="radio-duvidas">Dúvidas</label>
+
+                <label><input type="radio" name="motivo" value="criticas" id="radio-criticas">Críticas</label>
+
+                <label><input type="radio" name="motivo" value="outroAssunto" id="radio-outroAssunto">Outro assunto</label>
+
+            </fieldset>
+
+            <button type="submit" class="btn-submit" id="button-submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <ul class="social-medias">
+            <li><a href="https://www.facebook.com" target="blank"><img src="assets/img/facebook-icon.png"
+                        alt="ícone do Facebook fazendo link ao perfil da empresa"></a></li>
+            <li><a href="https://www.twitter.com" target="blank"><img src="assets/img/twitter-icon.svg"
+                        alt="ícone do Twitter fazendo link ao perfil da empresa"></a></li>
+            <li><a href="https://www.instagram.com" target="blank"><img class="icon" src="assets/img/instagram-icon.svg"
+                        alt="ícone do Instagram fazendo link ao perfil da empresa"></a></li>
+        </ul>
+        <ul class="contatos">
+            <li><a href="#">Email de suporte: ifood@suporte.com</a></li>
+            <li><a href="#">SAC: 0800 1234-5678</a></li>
+
+        </ul>
+        <p class="registro">©ifood Humildão | Todos os direitos reservados <br><br>
+        </p>
+    </footer>
+</body>
+
+</html>
